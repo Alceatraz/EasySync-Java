@@ -5,14 +5,14 @@ A simple tool for folder single direction sync over sftp (client to remote). Stu
 You need a simple config file `config.properties` (should found at working director, just beside the jar executable)
 
 ```properties
-easy-sync.server.host=YOUR-SERVER-HOSTNAME
-easy-sync.server.port=YOUR-SERVER-SSH-PORT
-easy-sync.username=YOUR-SSH-LOGIN-NAME
-easy-sync.key.path=YOUR-SSH-KEY-FILE(local file)
-easy-sync.key.hash=YOUR-SSH-KEY-HASH
-easy-sync.path.client=LOCAL-FOLDER
-easy-sync.path.server=REMOTE-FOLDER
-easy-sync.mode.delete=EXECUT-REMOTE-DELETE
+easy-sync.server.host=1.2.3.4      # YOUR-SERVER-HOSTNAME(string)
+easy-sync.server.port=12345        # YOUR-SERVER-SSH-PORT(int)
+easy-sync.username=foobar          # YOUR-SSH-LOGIN-NAME(string)
+easy-sync.key.path=/my-ssh/backup  # YOUR-SSH-KEY-FILE(string,file path)
+easy-sync.key.hash=SHA256:00000000 # YOUR-SSH-KEY-HASH(string)
+easy-sync.path.client=/tank/client # LOCAL-FOLDER(string,file path)
+easy-sync.path.server=/tank/server # REMOTE-FOLDER(string,file path)
+easy-sync.mode.delete=true         # EXECUT-REMOTE-DELETE(true/false)
 ```
 
 
